@@ -1,6 +1,9 @@
 # Human-Benchmark-Bots
+
 It is clear that the human benchmark was not meant for robots
+
 Bots run on selenium in the python language.
+
 All these bots run on: www.humanbenchmark.com
 
 I will be adding more bots soon. :)
