@@ -3,11 +3,11 @@ Bots run on Selenium in the python language that crushes all you hopes on www.hu
 
 I will be adding more bots soon. :)
 
-Here is the progression of the project so far:
+Here is the progression of the project so far and their percentiles:
 
-- [x] Aim Trainer
-- [x] Verbal Memory
-- [x] Number Memory
+- [x] Aim Trainer (Top 99.9%)
+- [x] Verbal Memory (Top 100)
+- [x] Number Memory (Top 100%)
 - [ ] Visual Memory
 - [ ] Sequence Memory 
 - [ ] Typing
