@@ -38,12 +38,12 @@ action = ActionChains(driver)
 # The Main Loop
 start_time = time.time()
 
+t0 = time.time()
 for _ in range(31):  # 30 Targets + 1 Target to start the test
-    t0 = time.time()
 
     # Finding the target
-    target = driver.find_element(By.CSS_SELECTOR, ".css-17nnhwz.e6yfngs4")
-    action.move_to_element(target).click().perform()
+    WebDriverWait(driver, 1).until(ec.element_to_be_clickable(
+        (By.XPATH, '//*[@id="root"]/div/div[4]/div[1]/div/div[1]/div/div/div/div[6]'))).click()
 
 end_time = time.time()
 delta_time = end_time - start_time
