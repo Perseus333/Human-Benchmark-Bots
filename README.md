@@ -7,7 +7,7 @@ Here is the progression of the project so far:
 
 - [x] Aim Trainer
 - [x] Verbal Memory
-- [ ] Number Memory
+- [x] Number Memory
 - [ ] Visual Memory
 - [ ] Sequence Memory 
 - [ ] Typing
