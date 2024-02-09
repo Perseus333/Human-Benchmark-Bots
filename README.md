@@ -19,5 +19,5 @@ Here is the progression of the project so far and their percentiles:
 - [ ] Sequence Memory 
 - [ ] Chimp Test
 
-### Extra Credit
-The number visual memory, aim trainer, and typing test have part of the code or are inspired from [Alorans'](https://github.com/alorans) [AutoHumanBenchmark](https://github.com/alorans/AutoHumanBenchmark)
+## Extra Credit
+The visual memory, aim trainer, and typing test have part of the code or are inspired from [Alorans'](https://github.com/alorans) [AutoHumanBenchmark](https://github.com/alorans/AutoHumanBenchmark)
