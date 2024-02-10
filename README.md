@@ -1,6 +1,6 @@
 # Human-Benchmark-Bots
 
-It is clear that the human benchmark was not meant for robots
+## Human benchmark was never meant for bots
 
 Bots run on selenium in the python language.
 
@@ -8,6 +8,7 @@ All these bots run on: www.humanbenchmark.com
 
 I will be adding more bots soon. :)
 
+## Progress
 Here is the progression of the project so far and their percentiles:
 
 - [x] Aim Trainer (Top 99.9%) - Best score: 26ms
