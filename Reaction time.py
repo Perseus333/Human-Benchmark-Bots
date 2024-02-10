@@ -2,7 +2,7 @@ import time
 
 from selenium import webdriver
 from selenium.common.exceptions import TimeoutException
-# from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.chrome.service import Service as ChromeService
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as ec
@@ -10,41 +10,56 @@ from selenium.webdriver.support.ui import WebDriverWait
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.common.exceptions import NoSuchElementException
 
-# ===== Headless Mode Config =====
-# chrome_options = Options()
+# ================
+# =  IMPORTANT!  =
+# ================
+
+# To improve performance follow the following steps:
+
+# Install U-Block origin into your chrome profile
+# Go to "chrome://version" and copy your profile path
+# Paste the path here:
+chrome_profile_path = r" **** PASTE THE PATH HERE ***** "
+chrome_options = Options()
+chrome_options.add_argument(f'--user-data-dir={chrome_profile_path}')
 # chrome_options.add_argument('--headless')
 # chrome_options.add_argument('--remote-debugging-port=9222')
 
-# Add argument "options=chrome_options" for headless mode
-driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()))
+driver = webdriver.Chrome(service=ChromeService(ChromeDriverManager().install()), options=chrome_options)
 
 driver.get("https://humanbenchmark.com/tests/reactiontime")
 
-# Accepting Cookies
-try:
-    accept_cookies = WebDriverWait(driver, 10).until(
-        ec.presence_of_element_located((By.CLASS_NAME, "css-47sehv"))
-    )
-    accept_cookies.click()
 
-except TimeoutException:
-    print("Timed out waiting for the cookies notice button to load")
-    exit()
+def accept_cookies():
+    # Accepting Cookies
+    try:
+        accept_cookies_element = WebDriverWait(driver, 10).until(
+            ec.presence_of_element_located((By.CLASS_NAME, "css-47sehv"))
+        )
+        accept_cookies_element.click()
+
+    except TimeoutException:
+        print("Timed out waiting for the cookies notice button to load")
+        exit()
 
 
-# The Main Loop
+# If you have installed the U-Block Origin Extension then accept_cookies() is not needed
+# accept_cookies()
+
 
 driver.find_element(By.CLASS_NAME, "view-splash").click()
 
-
+# The Main Loop
 i = 0
 while i < 5:
-
     try:
         # Finding the target by XPATH
         target = driver.find_element(By.CLASS_NAME, 'view-go')
         target.click()
         target.click()
+
+        # The element takes at least 2.5 to load
+        time.sleep(2.5)
         i += 1
 
     except NoSuchElementException:
@@ -74,7 +89,7 @@ except TimeoutException:
 
 report = f"""
 
-You got an average time of: {score}
+Average time of: {score}
 Percentage: Top {percentage}
 
 """
