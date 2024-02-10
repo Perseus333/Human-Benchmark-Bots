@@ -1,6 +1,6 @@
 # Human-Benchmark-Bots
 
-> Human benchmark was never meant for bots
+**Human benchmark was never meant for bots**
 
 Bots run on selenium in the python language.
 
