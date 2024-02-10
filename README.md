@@ -15,7 +15,7 @@ Here is the progression of the project so far and their percentiles:
 - [x] Number Memory (Top 100%) - Best score: ∞
 - [x] Verbal Memory (Top 100) - Best score: ∞
 - [x] Visual Memory (Top 100%) - Best score: ∞
-- [x] Reaction Time (Top 99.9%) - Best score: 34ms
+- [x] Reaction Time (Top 99.9%) - Best score: 28ms
 - [x] Typing (Top 100%) - Best score: 8200 WPM
 - [ ] Sequence Memory 
 - [ ] Chimp Test
