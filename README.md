@@ -2,23 +2,76 @@
 
 **Human benchmark was never meant for bots**
 
-Bots run on selenium in the python language.
+The main goal of this bots is to complete the benchmarks as quickly as possible and get the highest score
 
-All these bots run on: www.humanbenchmark.com
+Bots run on selenium in the python language for www.humanbenchmark.com
 
 I will be adding more bots soon. :)
+
+## Table of Contents
+
+- [Progress](#progress)
+- [Installation](#installation)
+- [Contributing](#contributing)
+- [License](#license)
+- [Extra Credit](#extra-credit)
 
 ## Progress
 Here is the progression of the project so far and their percentiles:
 
-- [x] Aim Trainer (Top 99.9%) - Best score: 26ms
-- [x] Number Memory (Top 100%) - Best score: ∞
-- [x] Verbal Memory (Top 100) - Best score: ∞
-- [x] Visual Memory (Top 100%) - Best score: ∞
-- [x] Reaction Time (Top 99.9%) - Best score: 28ms
-- [x] Typing (Top 100%) - Best score: 8200 WPM
-- [x] Chimp Test (Top 100%) - Best score: 41(max) in 33.864s
-- [ ] Sequence Memory 
+- [x] [Aim Trainer](https://github.com/Perseus333/Human-Benchmark-Bots/blob/main/Aim-Trainer.py) (Top 99.9%) - Best score: 26ms
+- [x] [Number Memory](https://github.com/Perseus333/Human-Benchmark-Bots/blob/main/Number-Memory.py) (Top 100%) - Best score: ∞
+- [x] [Verbal Memory](https://github.com/Perseus333/Human-Benchmark-Bots/blob/main/Reaction-Time.py) (Top 100) - Best score: ∞
+- [x] [Visual Memory](https://github.com/Perseus333/Human-Benchmark-Bots/blob/main/Visual-Memory.py) (Top 100%) - Best score: ∞
+- [x] [Reaction Time](https://github.com/Perseus333/Human-Benchmark-Bots/blob/main/Reaction-Time.py) (Top 99.9%) - Best score: 28ms
+- [x] [Typing Test](https://github.com/Perseus333/Human-Benchmark-Bots/blob/main/Typing-Test.py) (Top 100%) - Best score: 8200 WPM
+- [x] [Chimp Test](https://github.com/Perseus333/Human-Benchmark-Bots/blob/main/Chimp-Test.py) (Top 100%) - Best score: 41(max) in 33.864s
+- [ ] Sequence Memory
+
+
+## Installation
+The scripts are meant for **Python 3.9**
+The scripts can be run independently from each other.
+
+### Dependencies
+Before you run make sure that you have installed the required dependencies which are:
+
+1. **Selenium** - Allows to scrape the website and interact with it.
+2. **Webdriver Manager** - Removes the need to install a chromedriver manually and specify its location path
+
+To install both of them just run:
+
+```
+pip install selenium webdriver-manager
+```
+### Running the files
+
+Clone this repository to your local machine:
+
+```bash
+git clone https://github.com/Perseus333/Human-Benchmark-Bots.git
+```
+
+
+Move to the directory containing the scripts:
+
+```
+cd Human-Benchmark-Bots
+```
+
+
+Choose a script to run, for example, Aim-Trainer.py, and execute it:
+
+```bash
+python Aim-Trainer.py
+```
+
+## Contributing
+Feel free to suggest improvements and contribute to the code!
+
+ ## License
+
+This project is licensed under the GPL-3.0 license - see the [LICENSE](LICENSE) file for details.
 
 ## Extra Credit
 The visual memory, aim trainer, and typing test have part of the code or are inspired from [Alorans'](https://github.com/alorans) [AutoHumanBenchmark](https://github.com/alorans/AutoHumanBenchmark)
