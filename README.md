@@ -21,12 +21,12 @@ Here is the progression of the project so far and their percentiles:
 
 - [x] [Aim Trainer](https://github.com/Perseus333/Human-Benchmark-Bots/blob/main/Aim-Trainer.py) (Top 99.9%) - Best score: 26ms
 - [x] [Number Memory](https://github.com/Perseus333/Human-Benchmark-Bots/blob/main/Number-Memory.py) (Top 100%) - Best score: ∞
+- [x] [Sequence Memory](https://github.com/Perseus333/Human-Benchmark-Bots/blob/main/Sequence-Memory.py) (Top 100%) - Best score: ∞
 - [x] [Verbal Memory](https://github.com/Perseus333/Human-Benchmark-Bots/blob/main/Reaction-Time.py) (Top 100) - Best score: ∞
 - [x] [Visual Memory](https://github.com/Perseus333/Human-Benchmark-Bots/blob/main/Visual-Memory.py) (Top 100%) - Best score: ∞
 - [x] [Reaction Time](https://github.com/Perseus333/Human-Benchmark-Bots/blob/main/Reaction-Time.py) (Top 99.9%) - Best score: 28ms
 - [x] [Typing Test](https://github.com/Perseus333/Human-Benchmark-Bots/blob/main/Typing-Test.py) (Top 100%) - Best score: 8200 WPM
 - [x] [Chimp Test](https://github.com/Perseus333/Human-Benchmark-Bots/blob/main/Chimp-Test.py) (Top 100%) - Best score: 41(max) in 33.864s
-- [ ] Sequence Memory
 
 
 ## Installation
