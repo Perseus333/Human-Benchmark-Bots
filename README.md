@@ -6,8 +6,6 @@ The main goal of this bots is to complete the benchmarks as quickly as possible 
 
 Bots run on selenium in the python language for www.humanbenchmark.com
 
-I will be adding more bots soon. :)
-
 ## Table of Contents
 
 - [Progress](#progress)
@@ -59,12 +57,39 @@ Move to the directory containing the scripts:
 cd Human-Benchmark-Bots
 ```
 
+You have two options, either executing a standalone script, or main.py to be able to execute them all multiple times
 
-Choose a script to run, for example, Aim-Trainer.py, and execute it:
+### Standalone
+
+Run a python file, AimTrainer.py for example:
 
 ```bash
-python AimTrainer.py
+cd standalones
+python Aim-Trainer.py
 ```
+
+### main.py
+
+Run main.py:
+
+```bash
+python main.py
+```
+
+You should know that main.py requires certain commands to open each test, here is a table with the values
+
+| Command | Function         |
+|---------|------------------|
+| typing  | typing_test      |
+| sequence| sequence_memory  |
+| aim     | aim_trainer      |
+| reaction| reaction_time    |
+| number  | number_memory    |
+| chimp   | chimp_test       |
+| visual  | visual_memory    |
+| verbal  | verbal_memory    |
+
+So, when asked just type in the correct command
 
 ## Contributing
 Feel free to suggest improvements and contribute to the code!
