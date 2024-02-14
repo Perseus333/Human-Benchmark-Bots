@@ -63,7 +63,7 @@ cd Human-Benchmark-Bots
 Choose a script to run, for example, Aim-Trainer.py, and execute it:
 
 ```bash
-python Aim-Trainer.py
+python AimTrainer.py
 ```
 
 ## Contributing
